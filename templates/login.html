@@ -100,6 +100,20 @@
     <input type="text" name="username" placeholder="رقم الهاتف المحمول أو اسم المستخدم أو البريد الإلكتروني" required autofocus>
     <input type="password" name="password" placeholder="كلمة السر" required>
     <button type="submit">تسجيل الدخول</button>
+    # صفحة إنشاء حساب جديد (واجهة فقط)
+@app.route("/signup")
+def signup():
+    return "<h1 style='color:white;background:black;height:100vh;text-align:center;padding-top:20%;'>صفحة إنشاء حساب جديد (قيد التطوير)</h1>"
+
+# صفحة استعادة كلمة السر (واجهة فقط)
+@app.route("/forgot")
+def forgot():
+    return "<h1 style='color:white;background:black;height:100vh;text-align:center;padding-top:20%;'>صفحة استعادة كلمة السر (قيد التطوير)</h1>"
+
+# صفحة فيسبوك (واجهة فقط)
+@app.route("/fb-login")
+def fb_login():
+    return "<h1 style='color:white;background:black;height:100vh;text-align:center;padding-top:20%;'>جاري التحويل إلى فيسبوك...</h1>"
 </form>
 
 </body>
